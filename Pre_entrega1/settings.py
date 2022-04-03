@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'AppRegistro',
 ]
 
 MIDDLEWARE = [
@@ -54,7 +55,7 @@ ROOT_URLCONF = 'Pre_entrega1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['C:/Users/SAMIR/Desktop/Cursos/Python/Entrega1_grupo9/Entrega1_Grupo9/Pre_entrega1/Templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
