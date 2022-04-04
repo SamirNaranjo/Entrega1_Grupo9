@@ -9,3 +9,7 @@ def inicio(request):
 # def personas(request):
 
 #     return render(request, 'Appcoder/personas.html')
+
+def usuario(request):
+
+    return render(request, 'AppRegistro/usuario.html')
