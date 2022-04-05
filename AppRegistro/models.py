@@ -1,4 +1,3 @@
-from typing_extensions import Self
 from urllib import request
 from django.db import models
 
