@@ -6,7 +6,7 @@ from .views import usuario
 urlpatterns = [
     path('', inicio),
     # path('personas/', personas),
-    path('usuario/' , usuario ),
+    path('usuario/' , usuario, name= "usuario_formulario"),
     path('pedidos/', pedido)
 
     
