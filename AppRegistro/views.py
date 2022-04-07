@@ -1,5 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
+from AppRegistro.forms import usuario_formulario
+from AppRegistro.models import Usuario
 
 # Create your views here.
 
