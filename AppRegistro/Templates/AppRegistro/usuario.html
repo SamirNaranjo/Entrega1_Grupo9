@@ -1,11 +1,14 @@
 {% extends "AppRegistro/inicio.html" %}
 {%load static %}
 {% block ContenidoCambia %}
-    <h1> Inicio de Sesion</h1>
+<br> <br> 
+    <h3> Inicio de Sesion</h3>
     {% if usuarioFormulario.error %}
     <p>Intente de nuevo</p>
     {% endif %}
-    <form  method="POST"> 
+    <div background="C:\Users\Administrador\Desktop\Entrega1_Grupo9\AppRegistro\Static\AppRegistro\assets\img\esta.jpg">
+    </div>
+    <form method="POST"> 
         
         {% csrf_token %}
         
@@ -14,6 +17,9 @@
 
         </table>
 
+        <br>
         <input type="submit" valor="enviar">
     </form>
+
+    <br><br>
 {% endblock ContenidoCambia%}
