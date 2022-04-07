@@ -7,10 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form>
-        <p>Nombre: <input type="text" name="nombre"></p>
-        <p>usuario: <input type="text" name="usurio"></p>
-        <p>Password: <input type="text" name="pass"></p>
+    <h1> Inicio de Sesion</h1>
+    {% if usuarioFormulario.error %}
+    <p>Intente de nuevo</p>
+    {% endif %}
+    <form  method="POST"> 
+        
+        {% csrf_token %}
+        
+        <table>
+            {{miForm.as_table}} 
+
+        </table>
+
         <input type="submit" valor="enviar">
     </form>
 </body>
