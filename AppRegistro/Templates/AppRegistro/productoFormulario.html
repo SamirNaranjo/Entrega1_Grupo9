@@ -1,0 +1,19 @@
+{% extends 'AppRegistro/padreFormulario.html' %}
+{% load static %}
+
+
+{% block contenidoQueCambia %}
+
+<form action="/AppRegistro/productoFormularioPost/" method="POST">{% csrf_token %}
+
+    <p>Nombre: <input type="text" name="nombre_producto" placeholder="Ingrese Nombre Producto"></p>
+    <p>Cantidad: <input type="text" name="cantidad_producto" placeholder=" Ingrese Cantidad "></p>
+    <p>Precio: <input type="text" name="precio_producto" placeholder="Precio"> </p>
+    <p>Descripcion: <textarea name="descripcion"></textarea> </p>
+    
+    <input type="submit" value="Crear">
+
+</form>   
+
+{% endblock %}
+    

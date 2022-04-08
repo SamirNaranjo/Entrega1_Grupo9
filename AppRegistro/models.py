@@ -7,10 +7,11 @@ class Usuario(models.Model):
     id_usuario = models.CharField('apellido', max_length=50)
     contraseña = models.CharField('contraseña', max_length=50)
  
-class Producto():
-   nombre_producto = models.CharField('Nombre del Producto', max_length=30)
-   cantidad_producto = models.IntegerField('Cantidad de Producto')
-   precio_producto = models.FloatField('Precio del producto')
+class Producto(models.Model):
+   nombre_producto = models.CharField('nombre_producto', max_length=30)
+   cantidad_producto = models.IntegerField('cantidad_producto')
+   precio_producto = models.FloatField('precio_producto')
+   descripcion_producto = models.CharField('descripcion', max_length=200)
 
 class Pedido():
    numero_pedido = models.IntegerField('Numero de Pedido')
