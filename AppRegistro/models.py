@@ -12,7 +12,6 @@ class Producto(models.Model):
    nombre_producto = models.CharField('Nombre del Producto', max_length=30)
    cantidad_producto = models.IntegerField('Cantidad de Producto')
    precio_producto = models.FloatField('Precio del producto')
-   descripcion_producto = models.CharField('descripcion', max_length=200)
 
 class Pedido(models.Model):
    numero_pedido = models.IntegerField('Numero de Pedido')
